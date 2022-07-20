@@ -78,7 +78,7 @@ body {
 
 }
 
-.header .header-right:hover img {
+.header .header-right img:hover {
     width: 120%;
     height: 120%;
     transition: transform .2s ease;
@@ -253,4 +253,15 @@ footer nav ul li a {
     color: white;
     font-size: 20px;
     font-weight: 400;
+}
+
+/* ---------------------------------
+    Styles for Tablet Device 
+-------------------------------------*/
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+
+    main {
+        display: grid;
+    }
 }
