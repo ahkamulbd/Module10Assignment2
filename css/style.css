@@ -78,6 +78,12 @@ body {
 
 }
 
+.header .header-right:hover img {
+    width: 120%;
+    height: 120%;
+    transition: transform .2s ease;
+}
+
 /* ---------------------------------
     Styles of Main Section
 ------------------------------------  */
