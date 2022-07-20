@@ -76,3 +76,52 @@ body {
     margin-right: 400px;
 
 }
+
+/* ---------------------------------
+    Styles of Main Section
+------------------------------------  */
+
+main {
+    display: grid;
+    grid-template-columns: 400px repeat(1, 1fr);
+    grid-column-gap: 30px;
+    margin: 100px;
+
+}
+
+.main-left {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgb(66, 74, 72);
+    border-radius: 10px;
+}
+
+.main-left a {
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.main-left .main-button {
+    width: 300px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.main-left .main-button-click {
+    width: 300px;
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
