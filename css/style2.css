@@ -217,3 +217,76 @@ footer nav ul li a {
     font-size: 20px;
     font-weight: 400;
 }
+
+/* ---------------------------------
+    Styles for Tablet Device 
+-------------------------------------*/
+
+@media only screen and (min-width: 688px) and (max-width: 980px) {
+
+    .header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    main {
+        /* display: grid; */
+        background-color: aqua;
+        grid-template-rows: 500px repeat(1, 1fr);
+    }
+
+    .main-left {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-right {
+        grid-template-columns: 2, 1fr;
+    }
+
+    #view-all {
+        visibility: visible;
+    }
+}
+
+/* ------------------------------
+    Styles for Mobile Devices 
+------------------------------------*/
+@media only screen and (max-width: 688px) {
+
+    .header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    .header {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .header .header-left p {
+        text-overflow: ellipsis;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .main-right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer nav ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
